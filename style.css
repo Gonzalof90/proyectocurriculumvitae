@@ -19,3 +19,7 @@ background-image: linear-gradient(90deg, #8EC5FC 0%, #E0C3FC 57%);
     width: 20px;
   
 }
+
+.seleccionado {
+    background-color: lightblue;
+}
