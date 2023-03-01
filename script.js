@@ -19,9 +19,9 @@ async function showData() {
       $pictureContainer.innerHTML = `<img
       src=${picture.large}
       alt="imagen de perfil"
-      width="200px"
-      height="200px"
-      class="m-3 align-self-center"
+      width="200vw"
+      height="200vh"
+      class="m-3"
     />`
     $celNumberUser.textContent = `Cell number : ${cell}`
     $mailUser.textContent = `E-mail : ${email}`

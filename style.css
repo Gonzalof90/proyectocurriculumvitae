@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -13,10 +17,12 @@ background-image: linear-gradient(90deg, #8EC5FC 0%, #E0C3FC 57%);
 
 .titulo {
     text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
-.logoRedes {
+.logoRedes, .iconos {
     width: 20px;
+    object-fit: contain;
   
 }
 
@@ -27,7 +33,3 @@ background-image: linear-gradient(90deg, #8EC5FC 0%, #E0C3FC 57%);
 #botonSobreMi:hover, #botonContacto:hover, #botonEstudios:hover , #botonIdioma:hover, #botonConocimientos:hover, #botonExperienciaLaboral:hover, #botonRedesSociales:hover {
     background-color: lightblue;
 }
-
-/* #cuadroContacto, #cuadroExperienciaLaboral, #cuadroEstudios, #cuadroIdioma, #cuadroConocimientos, #cuadroredesSociales {
-    display: none;
-} */
