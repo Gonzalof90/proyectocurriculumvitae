@@ -12,23 +12,24 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous" defer
+  ></script>
+  <script src="/script.js" defer></script>
     <title>Proyecto_csdfv</title>
   </head>
   <body>
     <header>
       <div class="d-flex">
         
-        <div class="col-9 justify-content-center align-self-center">
-          <h1 class="shadow-lg">April Hicks</h1>
+        <div class="col-9 d-flex justify-content-center align-self-center">
+          <h1 id="titleNameUser" class="shadow-lg me-2"> </h1>
+          <h1 id="firstNameUser" class="shadow-lg me-2"> </h1>
+          <h1 id="lastNameUser" class="shadow-lg"></h1>
         </div>
-        <div class="col-3">
-          <img
-            src="/img/perfil.webp"
-            alt="imagen de perfil"
-            width="200px"
-            height="200px"
-            class="m-3 align-self-center"
-          />
+        <div id="pictureContainer" class="col-3">
         </div>
       </div>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -80,25 +81,17 @@
       </nav>
     </header>
     <main>
-      <div class="d-flex mx-5">
+      <div class=" mx-5">
         <!-- columna izquierda -->
-        <div class="col-6 me-2">
-          <article id="cuadroSobreMi" class="border p-3 mt-3">
-            <h3 class="titulo shadow-lg" id="sobreMi">Sobre Mi</h3>
-            <p>
-              Tengo 24 años y soy estudiante de programación, me considero una
-              persona muy responsable, cumplo con horarios y tengo
-              predisposición para aprender y mucha facilidad. Me adapto muy
-              fácil y sé trabajar en grupo.
-            </p>
-          </article>
+        <div class="me-2">
+          
           <article class="border p-3 mt-3 " id="cuadroContacto">
             <h3 class=" titulo shadow-lg" id="contacto">Contacto</h3>
             <p>(614) 772-8725</p>
             <p>april.hicks@example.com</p>
             <p>Yerba Buena, Tucumán</p>
           </article>
-          <article class="border p-3 mt-3">
+          <article class="border p-3 mt-3" id="cuadroExperienciaLaboral">
             <h3 class="titulo shadow-lg" id="experienciaLaboral">
               Experiencia laboral
             </h3>
@@ -119,8 +112,8 @@
           </article>
         </div>
         <!-- columna derecha -->
-        <div class="col-6 justify-content-center">
-          <article class="border p-3 mt-3">
+        <div class=" justify-content-center">
+          <article class="border p-3 mt-3" id="cuadroEstudios">
             <h3 class="titulo shadow-lg" id="estudios">Estudios</h3>
             <ul>
               <li>Rolling Code School Full Stack</li>
@@ -128,14 +121,14 @@
               <li>Bachiller de Administración y gestión de empresas</li>
             </ul>
           </article>
-          <article class="border p-3 mt-3">
+          <article class="border p-3 mt-3" id="cuadroIdioma">
             <h3 class="titulo shadow-lg" id="idioma">Idioma</h3>
             <ul>
               <li>Inglés nivel A1</li>
               <li>Manejo de tiempos verbales</li>
             </ul>
           </article>
-          <article class="border p-3 mt-3">
+          <article class="border p-3 mt-3" id="cuadroConocimientos">
             <h3 class="titulo shadow-lg" id="conocimientos">Conocimientos</h3>
             <ol>
               <li>HTML</li>
@@ -145,6 +138,15 @@
               <li>Javascript</li>
               <li>Aprendizaje en React con JS</li>
             </ol>
+          </article>
+          <article id="cuadroSobreMi" class="border p-3 mt-3">
+            <h3 class="titulo shadow-lg" id="sobreMi">Sobre Mi</h3>
+            <p>
+              Tengo 24 años y soy estudiante de programación, me considero una
+              persona muy responsable, cumplo con horarios y tengo
+              predisposición para aprender y mucha facilidad. Me adapto muy
+              fácil y sé trabajar en grupo.
+            </p>
           </article>
         </div>
       </div>
@@ -205,11 +207,5 @@
         </div>
       </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/script.js"></script>
   </body>
 </html>
